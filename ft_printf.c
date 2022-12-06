@@ -6,14 +6,14 @@
 /*   By: hsliu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 15:14:22 by hsliu             #+#    #+#             */
-/*   Updated: 2022/12/06 12:50:44 by hsliu            ###   ########lyon.fr   */
+/*   Updated: 2022/12/06 12:57:34 by hsliu            ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-int	ft_printf(char *fmt, ...)
+int	ft_printf(const char *fmt, ...)
 {
 	va_list	ap;
 	int		count;
@@ -27,7 +27,7 @@ int	ft_printf(char *fmt, ...)
 	return (count);
 }
 
-int	ft_print(va_list ap, char *fmt, int *count, int *add)
+int	ft_print(va_list ap, const char *fmt, int *count, int *add)
 {
 	while (*fmt)
 	{

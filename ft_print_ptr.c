@@ -6,7 +6,7 @@
 /*   By: hsliu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 16:40:27 by hsliu             #+#    #+#             */
-/*   Updated: 2022/12/06 11:30:20 by hsliu            ###   ########lyon.fr   */
+/*   Updated: 2022/12/06 13:00:15 by hsliu            ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_puthex(unsigned long m)
 	char	*hex;
 	int		count;
 
-	hex = "0123456789abcdef";	
+	hex = "0123456789abcdef";
 	count = 0;
 	if (m < 16)
 		count = count + ft_putchar(hex[m]);
